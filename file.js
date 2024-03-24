@@ -21,3 +21,13 @@ function getValue() {
     todoInput.value = ''
 }
 
+function deleteTodo(index) {
+    arr.splice(index, 1);
+    renderTodo()
+}
+
+function editTodo(index) {
+    const updatedVal = prompt('enter updated value');
+    arr.splice(index , 1 , updatedVal);
+    renderTodo()
+}
