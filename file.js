@@ -10,15 +10,15 @@ function renderTodo() {
     }
 }
 
-const todoInput = document.querySelector('#todo');
+const todo = document.querySelector('#todo');
 const ol = document.querySelector('ol');
 
 const arr = [];
 
 function getValue() {
-    arr.push(todoInput.value);
+    arr.push(todo.value);
     renderTodo()
-    todoInput.value = ''
+    todo.value = ''
 }
 
 function deleteTodo(index) {
