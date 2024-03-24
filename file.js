@@ -10,3 +10,14 @@ function renderTodo() {
     }
 }
 
+const todoInput = document.querySelector('#todo');
+const ol = document.querySelector('ol');
+
+const arr = [];
+
+function getValue() {
+    arr.push(todoInput.value);
+    renderTodo()
+    todoInput.value = ''
+}
+
